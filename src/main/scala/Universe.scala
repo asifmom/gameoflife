@@ -1,8 +1,8 @@
 case class Universe(liveCells:Set[Point]){
   val rulesEngine=Rules.default
-  def tick = new Universe(calculateLiveCells union calculateNewBornCells)
+  def tick = new Universe(calculateSurvivingCells union calculateNewBornCells)
 
-  private def calculateLiveCells = liveCells.filter(shouldSurvive)
+  private def calculateSurvivingCells = liveCells.filter(shouldSurvive)
 
   private def calculateNewBornCells = deadCells.filter(shouldBorn)
 
