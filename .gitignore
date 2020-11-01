@@ -1,0 +1,36 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Scala template
+*.class
+*.log
+
+### PlayFramework template
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/project
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+
+.bsp/
+.idea/$PRODUCT_WORKSPACE_FILE$
+.idea/.gitignore
+.idea/.name
+.idea/codeStyles/
+.idea/inspectionProfiles/
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/modules/
+.idea/sbt.xml
+.idea/scala_compiler.xml
+.idea/vcs.xml
