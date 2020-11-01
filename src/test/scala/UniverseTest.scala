@@ -17,19 +17,19 @@ class UniverseTest extends AnyFunSpec with Matchers {
       new Universe(liveCells).tick shouldBe new Universe(liveCells)
     }
 
-//    it("should support Blinker Pattern"){
-//      val liveCells = Set(
-//                    Point(0, 1),
-//                    Point(1, 1),
-//                    Point(2, 1)
-//      )
-//
-//      val nextGenLiveCells = Set(
-//
-//                    Point(1, 0),Point(1, 1),Point(1, 2)
-//      )
-//
-//      new Universe(liveCells).tick shouldBe new Universe(nextGenLiveCells)
-//    }
+    it("should support Blinker Pattern"){
+      val liveCells = Set(
+                    Point(0, 1),
+                    Point(1, 1),
+                    Point(2, 1)
+      )
+
+      val nextGenLiveCells = Set(
+
+                    Point(1, 0),Point(1, 1),Point(1, 2)
+      )
+
+      new Universe(liveCells).tick shouldBe new Universe(nextGenLiveCells)
+    }
   }
 }
